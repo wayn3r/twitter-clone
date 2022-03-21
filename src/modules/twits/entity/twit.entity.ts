@@ -5,6 +5,6 @@ export class Twit {
     @PrimaryGeneratedColumn()
     public id: number
 
-    @Column()
+    @Column({ nullable: false })
     public message: string
 }
