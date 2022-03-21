@@ -5,6 +5,7 @@ import { TwitGetController } from './controller/twit-get.controller'
 import { TwitPatchController } from './controller/twit-patch.controller'
 import { TwitPostController } from './controller/twit-post.controller'
 import { Twit } from './entity/twit.entity'
+import { CreateTwitService } from './service/create-twit.service'
 
 @Module({
     imports: [TypeOrmModule.forFeature([Twit])],
@@ -14,5 +15,6 @@ import { Twit } from './entity/twit.entity'
         TwitPatchController,
         TwitDeleteController,
     ],
+    providers: [CreateTwitService],
 })
 export class TwitsModule {}
