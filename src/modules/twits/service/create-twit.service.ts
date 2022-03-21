@@ -9,7 +9,7 @@ export class CreateTwitService {
         private readonly twitRepository: Repository<Twit>,
     ) {}
 
-    async create({ message }: CreateTwitDto): Promise<Twit> {
+    public async create({ message }: CreateTwitDto): Promise<Twit> {
         const twit: Twit = this.twitRepository.create({ message })
         return this.twitRepository.save(twit)
     }
