@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common'
 import { CreateTwitDto } from '../dtos/create-twit.dto'
-import { Twit } from '../entity/twit.entity'
+import { Twit } from '../entities'
 import { CreateTwitService } from '../service/create-twit.service'
 
 @Controller('twits')

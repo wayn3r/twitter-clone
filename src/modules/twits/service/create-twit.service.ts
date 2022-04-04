@@ -1,7 +1,7 @@
 import { InjectRepository } from '@nestjs/typeorm'
 import { Repository } from 'typeorm'
 import { CreateTwitDto } from '../dtos/create-twit.dto'
-import { Twit } from '../entity/twit.entity'
+import { Twit } from '../entities'
 
 export class CreateTwitService {
     constructor(

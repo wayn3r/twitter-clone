@@ -1,3 +1,6 @@
-export interface CreateTwitDto {
-    message: string
+import { IsString } from 'class-validator'
+
+export class CreateTwitDto {
+    @IsString()
+    public readonly message: string
 }
